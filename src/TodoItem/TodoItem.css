@@ -4,22 +4,35 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 24px;
-  margin-left: 70px; 
-  margin-right: 120px; 
-  box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.15);
+  margin: 24px auto; /* Centra horizontalmente */
+  padding: 16px; /* Añade padding para mejor espaciado */
+  max-width: 600px; /* Controla el ancho máximo para pantallas grandes */
+  box-shadow: 0px 5px 15px rgba(32, 35, 41, 0.15);
   border-radius: 10px;
-  border-color: #000000;
+  border: 1px solid #000000; /* Asegúrate de definir el borde correctamente */
 }
 
 .TodoItem-p {
-  margin: 24px 0;
-  width: calc(100% - 120px);
+  margin:24px  0px; /* Elimina márgenes innecesarios */
+  width: calc(100% - 120px); /* Asegura que el texto ocupe el espacio disponible */
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
 }
 
 .TodoItem-p--complete {
-   text-decoration: line-through;
+  text-decoration: line-through;
+}
+
+/* Media Queries para ajustar el diseño en pantallas más pequeñas */
+@media (max-width: 768px) {
+  .TodoItem {
+    margin: 16px; /* Reduce márgenes en pantallas más pequeñas */
+    padding: 12px; /* Ajusta el padding */
+  }
+  
+  .TodoItem-p {
+    font-size: 16px; /* Ajusta el tamaño de fuente en pantallas pequeñas */
+    line-height: 20px; /* Ajusta la altura de línea */
+  }
 }
