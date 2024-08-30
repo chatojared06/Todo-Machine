@@ -36,7 +36,7 @@ const {
         return (
           <>
             {sinTareas ? (
-              <h1>Agrega una nueva Tarea <br/> en botón + </h1>
+              <h1>Agrega una nueva Tarea <br/> en botón +</h1>
             ) : tareasCompletadas ? (
               <h1>Felicitaciones, completaste todas tus tareas.</h1>
             ) : (
